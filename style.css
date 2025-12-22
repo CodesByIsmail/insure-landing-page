@@ -1,0 +1,59 @@
+:root{
+
+--Blue-950: hsl(256, 26%, 20%);
+--Blue-500: hsl(216, 30%, 68%);
+
+/* ### Neutral */
+
+--Gray-950: hsl(270, 9%, 17%);
+--Gray-700: hsl(273, 4%, 51%);
+--Gray-50: hsl(0, 0%, 98%);
+
+  --container-width-sm: 80%;
+  --container-width-sm: 92%;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: var(--container-width-sm);
+  margin: 0 auto;
+}
+
+.hidden{
+  display: none;
+}
+
+img{
+  width: 100%;
+  object-fit: contain;
+}
+
+
+nav{
+  background: var(--Blue-500);
+  
+}
+
+.nav__bar{
+height: 5rem;
+  width: 100%;
+  display: flex;
+justify-content: space-between;
+
+}
+
+
+  
+.attribution { 
+      font-size: 11px; 
+      text-align: center; 
+ }
+.attribution a { 
+      color: hsl(228, 45%, 44%); 
+      
+}
