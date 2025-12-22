@@ -22,24 +22,31 @@
                 <img class="logo" src="/images/logo.svg" alt="logo" />
 
                 <div class="toggle__menu">
-                    <img src="/images/icon-hamburger.svg" alt="open-nav" />
+                    <img
+                        class="open__menu"
+                        src="/images/icon-hamburger.svg"
+                        alt="open-nav"
+                    />
+                    <img
+                        class="close__menu hidden"
+                        src="/images/icon-close.svg"
+                        alt="close-nav"
+                    />
                 </div>
 
                 <div class="nav__menu hidden">
-                    <img src="/images/icon-close.svg" alt="close-nav" />
-
-                    <a href="#">How we work</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Account</a>
-                    <a href="#">View plans</a>
+                    <a class="nav__link" href="#header">How we work</a>
+                    <a class="nav__link" href="#">Blog</a>
+                    <a class="nav__link" href="#">Account</a>
+                    <a class="nav__link btn" href="#plan">View plans</a>
                 </div>
             </div>
         </nav>
 
-        <header class="header">
-            <img src="/images/image-intro-mobile.jpg" alt="" />
+        <header class="header" >
+            <img src="/images/image-intro-mobile.jpg" alt="image-intro-mobile" />
             <div class="header__wrapper">
-                <section class="hero container header__container">
+                <section class="hero container header__container" id="header">
                     <h1>Humanizing your insurance.</h1>
 
                     <p>
@@ -55,12 +62,12 @@
         </header>
 
         <main>
-            <section class="about container">
+            <section class="abouts container" id="plan">
                 <hr />
 
                 <h1>We’re different</h1>
 
-                <div class="abouts">
+                <div class="abouts__container">
                     <div class="about">
                         <img src="/images/icon-snappy-process.svg" alt="" />
 
@@ -179,5 +186,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+        <script src="script.js"></script>
     </body>
 </html>
