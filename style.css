@@ -12,6 +12,22 @@
     --container-width-sm: 90%;
 }
 
+@layer fonts {
+    @font-face {
+        font-family: dm-serif-regular;
+        src: url(/fonts/DMSerifDisplay-Regular.ttf);
+    }
+    @font-face {
+        font-family: karla-medium;
+        src: url(/fonts/Karla-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: karla-regular;
+        src: url(/fonts/Karla-Regular.ttf);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -39,20 +55,30 @@ img {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
     line-height: 1.1em;
+    font-family: dm-serif-regular;
+    font-weight: 400;
 }
 
 p {
     font-size: 1rem;
+    font-family: karla-regular;
+    line-height: 1.6em;
+    color: var(--Gray-50);
 }
 
 h3 {
     font-size: 2rem;
+    font-family: dm-serif-regular;
+    font-weight: 400;
 }
 
 a {
     color: var(--Gray-50);
+    font-family: karla-medium;
+    letter-spacing: 0.1rem;
 }
 
 .btn {
@@ -141,7 +167,7 @@ h3 {
     width: 30%;
     justify-self: center;
     margin: 3rem 0;
-    color: var(--Blue-500);
+    border: 1px solid var(--Blue-500);
 }
 
 .about {
