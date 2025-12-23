@@ -1,6 +1,7 @@
 const openToggle = document.querySelector('.open__menu');
 const closeToggle = document.querySelector('.close__menu');
 const navMenu = document.querySelector('.nav__menu');
+const btnAll = document.querySelectorAll('.btnScroll')
 
 openToggle.addEventListener('click', function () {
     openToggle.classList.toggle('hidden');
@@ -26,3 +27,10 @@ navMenu.addEventListener('click', function (e) {
         navMenu.style.display = 'none';
     }
 });
+
+btnAll.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(btn.getAttribute('href')).scrollIntoView({behavior:'smooth'})
+    })
+})
